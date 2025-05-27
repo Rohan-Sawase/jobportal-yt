@@ -7,6 +7,8 @@ import Footer from './shared/Footer'
 import useGetAllJobs from '@/hooks/useGetAllJobs'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import FilterCard from './FilterCard'
+import LatestJobCards from './LatestJobCards'
 
 const Home = () => {
   useGetAllJobs();

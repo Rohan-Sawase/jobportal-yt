@@ -10,7 +10,11 @@ const category = [
     "Backend Developer",
     "Data Science",
     "Graphic Designer",
-    "FullStack Developer"
+    "FullStack Developer",
+    "Data Analytics",
+    "Cyber Security",
+    "Web Developer",
+    "Hardware"
 ]
 
 const CategoryCarousel = () => {
@@ -28,7 +32,8 @@ const CategoryCarousel = () => {
                     {
                         category.map((cat, index) => (
                             <CarouselItem className="md:basis-1/2 lg-basis-1/3">
-                                <Button onClick={()=>searchJobHandler(cat)} variant="outline" className="rounded-full">{cat}</Button>
+                                <Button onClick={()=>searchJobHandler(cat)}  variant="outline" className="rounded-full">{cat}</Button>
+                                {/* IF YOU GIVE variant="outline" IN BUTTON TAG THEN BG COLOR IS COME TO THE BUTTONS  */}
                             </CarouselItem>
                         ))
                     }
